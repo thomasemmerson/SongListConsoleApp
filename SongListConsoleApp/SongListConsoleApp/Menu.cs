@@ -22,5 +22,13 @@ namespace SongListConsoleApp
                 Console.WriteLine($"{i+1}) {_options[i]}");
             }
         }
+
+        internal static int Prompt(string message)
+        {
+            Console.Write(message);
+            string userInput = Console.ReadLine();
+
+            return Convert.ToInt32(userInput);
+        }
     }
 }

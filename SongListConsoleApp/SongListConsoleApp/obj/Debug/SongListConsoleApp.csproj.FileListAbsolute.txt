@@ -1,0 +1,5 @@
+E:\Code\SongListConsoleApp\SongListConsoleApp\SongListConsoleApp\obj\Debug\SongListConsoleApp.csprojResolveAssemblyReference.cache
+E:\Code\SongListConsoleApp\SongListConsoleApp\SongListConsoleApp\bin\Debug\SongListConsoleApp.pdb
+E:\Code\SongListConsoleApp\SongListConsoleApp\SongListConsoleApp\obj\Debug\SongListConsoleApp.pdb
+E:\Code\SongListConsoleApp\SongListConsoleApp\SongListConsoleApp\bin\Debug\SongListConsoleApp.exe
+E:\Code\SongListConsoleApp\SongListConsoleApp\SongListConsoleApp\obj\Debug\SongListConsoleApp.exe

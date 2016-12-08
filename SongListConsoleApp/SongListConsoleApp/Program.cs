@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace SongListConsoleApp
 {
@@ -20,8 +17,11 @@ namespace SongListConsoleApp
             CLI.DisplayWelcome();
 
             int option = 0;
-            while ((option = CLI.Prompt()) != 3)
+            while (option != 3)
             {
+                option = Menu.Prompt("Please select an option: ");
+
+                Debug.WriteLine($"Option selected: {option}");
                 switch (option)
                 {
                     case 1:
@@ -49,6 +49,8 @@ namespace SongListConsoleApp
             {
                 string songName = CLI.Prompt("What's the name of the song? ");
                 string artist = CLI.Prompt("Who's the artist? ");
+
+                Debug.WriteLine($"New song added: {songName}");
 
                 _songs.Add(new Song { Name = songName, Artist = artist });
                 done = CLI.Prompt("Add another song? (Y/N) ").ToLower() != "y";
